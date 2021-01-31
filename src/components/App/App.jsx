@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
@@ -9,7 +9,6 @@ function App() {
 
     //default value probably doesn't work...
     const [images, setImages] = useState([]);
-    const [likes, setLikes] = useState(0);
 
   useEffect(() => {
     getImages();
@@ -31,8 +30,6 @@ function App() {
         <div className="container">
         <GalleryList 
         images={images}
-        setLikes={setLikes}
-        likes={likes}
         />
         </div>
       </div>

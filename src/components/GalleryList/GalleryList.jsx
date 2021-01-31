@@ -2,24 +2,21 @@ import React from 'react';
 import './GalleryList.css';
 import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 
-function GalleryList({ images, likes, setLikes }) {
+function GalleryList({ images}) {
 
     return (
 
-        <ul className="imageList">
+        <div className="card-deck">
             <>
                 {images.map(image =>
-                (<li key={image.id}>
-                    {setLikes(image.likes)}
+                (<div key={image.id}>
                     <GalleryItem
-                        image={image}
-                        likes={likes}
-                        setLikes={setLikes} />
-                </li>
+                        image={image} />
+                </div>
                 )
                 )}
             </>
-        </ul>
+        </div >
     );
 }
 

@@ -7,10 +7,10 @@
   padding: 1em;
   color: white;
   margin-bottom: 1em;
+  width: 100%;
 }
 
 .App-title {
   font-size: 4em;
-  font-family: 'Euphoria Script';
-  font-weight: bold;
+  font-family: 'Permanent Marker', cursive;
 }
