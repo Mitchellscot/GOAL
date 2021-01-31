@@ -1,18 +1,18 @@
 const galleryItems = [
 
-    { id: 1, title: "Newborn!", description: '1984, the year I was born', year: 1984, path: './images/1984.jpg', likes: 0 },
+    { id: 1, title: "Newborn!", description: '1984, the year I was born', year: 1984, path: './images/1984.jpg', likes: 2 },
 
-    { id: 2, title: "Eating Yogurt!", description: 'Mom said I loved vanilla yogurt!', year: 1985, path: './images/1985.jpg', likes: 0 },
+    { id: 2, title: "Eating Yogurt!", description: 'Mom said I loved vanilla yogurt!', year: 1985, path: './images/1985.jpg', likes: 5 },
 
-    { id: 3, title: "Family photo!", description: 'Matchy-Matchy', year: 1986, path: './images/1986.jpg', likes: 0 },
+    { id: 3, title: "Family photo!", description: 'Matchy-Matchy', year: 1986, path: './images/1986.jpg', likes: 1 },
 
-    { id: 4, title: "Easter!", description: 'Found the eggs mom!', year: 1987, path: './images/1987.jpg', likes: 0 },
+    { id: 4, title: "Easter!", description: 'Found the eggs mom!', year: 1987, path: './images/1987.jpg', likes: 3 },
 
     { id: 5, title: "Feeding Ducks!", description: 'Check out the medieval times hat!', year: 1988, path: './images/1988.jpg', likes: 0 },
 
     { id: 6, title: "Preschool!", description: 'Mischievous!', year: 1989, path: './images/1989.jpg', likes: 0 },
 
-    { id: 7, title: "New teeth!", description: 'No I did not keep it!', year: 1990, path: './images/1990.jpg', likes: 0 },
+    { id: 7, title: "New teeth!", description: 'No I did not keep it!', year: 1990, path: './images/1990.jpg', likes: 1 },
 
     { id: 8, title: "Learning to swim!", description: 'I loved swimming (still do!)', year: 1991, path: './images/1991.jpg', likes: 0 },
 
@@ -22,7 +22,7 @@ const galleryItems = [
 
     { id: 11, title: "Fourth grade photo!", description: 'Wish I still had that shirt!', year: 1994, path: './images/1994.jpg', likes: 0 },
 
-    { id: 12, title: "Soccor!", description: 'Maybe I should rescan this image...', year: 1995, path: './images/1995.jpg', likes: 0 },
+    { id: 12, title: "Soccer!", description: 'Maybe I should rescan this image...', year: 1995, path: './images/1995.jpg', likes: 0 },
 
     { id: 13, title: "Swimming!", description: 'In the ocean with my bro in Catalina!', year: 1996, path: './images/1996.jpg', likes: 0 },
 
@@ -32,7 +32,7 @@ const galleryItems = [
 
     { id: 16, title: "Fishing in Mexico!", description: 'Such a cool dude!', year: 1999, path: './images/1999.jpg', likes: 0 },
 
-    { id: 17, title: "High School Sophomore!", description: 'Braces and bleeched hair!', year: 2000, path: './images/2000.jpg', likes: 0 },
+    { id: 17, title: "High School!", description: 'Braces and bleeched hair!', year: 2000, path: './images/2000.jpg', likes: 0 },
 
     { id: 18, title: "Skating!", description: "Pretending that i am surfing!", year: 2001, path: './images/2001.jpg', likes: 0 },
 

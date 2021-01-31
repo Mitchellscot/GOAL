@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import GalleryList from '../GalleryList/GalleryList';
-import GalleryItem from '../GalleryItem/GalleryItem';
+// import GalleryItem from '../GalleryItem/GalleryItem';
 
 function App() {
 
@@ -26,11 +26,13 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
+          <h1 className="App-title">Mitchell Scott - EVERY year of his LIFE!</h1>
         </header>
         <div className="container">
         <GalleryList 
         images={images}
+        setLikes={setLikes}
+        likes={likes}
         />
         </div>
       </div>

@@ -8,18 +8,20 @@ function GalleryList({ images, likes, setLikes }) {
 
         <ul className="imageList">
             <>
-            {images.map(image => 
+                {images.map(image =>
                 (<li key={image.id}>
-                <GalleryItem
-                    image={image}
-                    likes={likes}
-                    setLikes={setLikes} />
+                    {setLikes(image.likes)}
+                    <GalleryItem
+                        image={image}
+                        likes={likes}
+                        setLikes={setLikes} />
                 </li>
                 )
-            )}
-            </> 
+                )}
+            </>
         </ul>
     );
 }
 
 export default GalleryList;
+
