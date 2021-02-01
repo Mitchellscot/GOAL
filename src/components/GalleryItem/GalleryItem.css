@@ -43,3 +43,23 @@ small {
   i {
     font-size: 4em;
   }
+i:hover {
+  cursor: pointer;
+  margin: 0 auto;
+  transition: all 0.4s ease-in;
+  animation-name: grow-shrink;
+  animation-duration: .8s;
+}
+@keyframes grow-shrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+
+  }
+  100% {
+    transform: scale(1);
+
+  }
+}

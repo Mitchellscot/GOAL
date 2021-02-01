@@ -2,7 +2,7 @@ import React from 'react';
 import './GalleryList.css';
 import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 
-function GalleryList({ images}) {
+function GalleryList({ images, updateLikes}) {
 
     return (
 
@@ -11,7 +11,9 @@ function GalleryList({ images}) {
                 {images.map(image =>
                 (<div key={image.id}>
                     <GalleryItem
-                        image={image} />
+                        image={image}
+                        updateLikes={updateLikes} 
+                        />
                 </div>
                 )
                 )}

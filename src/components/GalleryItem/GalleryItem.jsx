@@ -2,15 +2,23 @@ import React from 'react';
 import './GalleryItem.css';
 import {useState} from 'react';
 
-function GalleryItem({ image }) {
+function GalleryItem({ image, updateLikes }) {
     const [hovered, setHovered] = useState(false);
-    const [likes, setLikes] = useState(0);
+
     const toggleHover = () => {
         setHovered(!hovered);
     }
 
-    const updateLikes = () => {
-        setLikes(likes + 1);
+    const determineLIkes = (likes) => {
+        if (likes === 0 ) {
+            return <em >No one has like this yet...</em>;
+        }
+        else if (likes === 1) {
+            return <em >One person likes this!</em>;
+        }
+        else if (likes > 1) {
+            return <em >{likes} people like this!</em>;
+        }
     }
 
     return (
@@ -21,11 +29,11 @@ function GalleryItem({ image }) {
                 <img src={image.path} alt={"A photo from the year " + image.year} height="300 px" width="300 px"
                 className={hovered ? 'hovered' : ''} 
                 /><br />
-                <div className={hovered ? 'middle showInfo' : 'middle'} ><div className="picDescription">{image.description}</div><i className="fas fa-thumbs-up" onClick={() => updateLikes()}></i></div>
+                <div className={hovered ? 'middle showInfo' : 'middle'} ><div className="picDescription">{image.description}</div><i className="fas fa-thumbs-up" onClick={() => updateLikes(image, 1)}></i></div>
                 <div className="year">{image.year}</div>
             </div>
             <div className="card-footer">
-                {likes < 1 ? <small >No one has like this yet...</small> : <small >{likes} people have liked this</small>}
+                {determineLIkes(image.likes)}
             </div>
         </div>
     );

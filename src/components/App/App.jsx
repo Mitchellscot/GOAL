@@ -22,6 +22,15 @@ function App() {
       });
     }
 
+    const updateLikes = (image, num) => {
+      const updatedLikes = image.likes + num;
+      const id = image.id
+      console.log(`updating image with ID of ${id} with this many likes: ${updatedLikes}`)
+      axios.put(`/gallery/like/${id}`, {likes: updatedLikes}).then((response) => {
+        getImages();
+      }).catch((error) => {console.log(`HEY MITCH - YOU GOT AN ERROR! ${error}`)})
+    }
+
     return (
       <div className="App">
         <header className="App-header">
@@ -30,6 +39,7 @@ function App() {
         <div className="container">
         <GalleryList 
         images={images}
+        updateLikes={updateLikes}
         />
         </div>
       </div>
