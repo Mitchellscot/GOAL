@@ -23,7 +23,7 @@ function UploadForm({ newImageDescription, setNewImageDescription, newImageName,
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">URL</span>
-                        <input value={newImageURL} onChange={(event) => { setNewImageURL(event.target.value) }} type="text" class="form-control" placeholder="https://i.ibb.co/W624MyM/hackerman.jpg" />
+                        <input value={newImageURL} onChange={(event) => { setNewImageURL(event.target.value) }} type="text" class="form-control" placeholder="https://www.imgbb.com" />
                     </div>
                     <button type="submit" class="btn btn-primary">Submit!</button>
                     </div>
