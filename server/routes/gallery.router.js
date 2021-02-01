@@ -3,6 +3,20 @@ const router = express.Router();
 const galleryItems = require('../modules/gallery.data');
 const pool = require('../modules/pool');
 
+//DELETE
+router.delete('/:id',  (req, res) => {
+    let id = req.params.id;
+    console.log('DELETING THIS PHOTO', id);
+    const query = 'DELETE FROM "images" WHERE id=$1;';
+    pool.query(query, [id]).
+    then((result) => {
+      res.sendStatus(204);
+    }).catch((err) => {
+    console.log(`error making the request: ${query}`);
+    res.sendStatus(500);
+    })
+  });
+
 //POST Route
 router.post('/', (req, res) =>{
     const newImage = req.body;

@@ -89,3 +89,7 @@ i:hover {
       0px -10px 100px #7B96B8;
   }
 }
+.fa-trash-alt {
+  font-size: 24px;
+  float: right;
+}

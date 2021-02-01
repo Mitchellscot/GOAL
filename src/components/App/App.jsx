@@ -1,7 +1,7 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
+import swal from 'sweetalert';
 import GalleryList from '../GalleryList/GalleryList';
 
 
@@ -57,6 +57,26 @@ function App() {
       setNewImageURL('');
     })
   }
+
+      //DELETE request
+      const deleteImage = (item) => {
+        swal({
+            title: 'Are you sure you want to delete this photo?',
+            icon: 'warning',
+            buttons: true,
+            dangerMode: true
+          }).
+        then((willDelete) => {
+            if (willDelete) {
+                axios.delete(`/gallery/${item.id}`)
+                .then(response => {
+                    getImages();
+                }).catch(error => {
+                    console.log(`HEY MITCH - YOU GOT A MESSAGE ${error}`);
+                })}
+          });
+        }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -75,6 +95,7 @@ function App() {
           newImageURL={newImageURL}
           setNewImageURL={setNewImageURL}
           addImage={addImage}
+          deleteImage={deleteImage}
         />
       </div>
     </div>
