@@ -1,10 +1,10 @@
 const galleryItems = [
 
-    { id: 1, title: "Newborn!", description: '1984, the year I was born', year: 1984, path: './images/1984.jpg', likes: 2 },
+    { id: 1, title: "Newborn!", description: 'The year I was born', year: 1984, path: './images/1984.jpg', likes: 2 },
 
     { id: 2, title: "Eating Yogurt!", description: 'Mom said I loved vanilla yogurt!', year: 1985, path: './images/1985.jpg', likes: 5 },
 
-    { id: 3, title: "Family photo!", description: 'Matchy-Matchy', year: 1986, path: './images/1986.jpg', likes: 1 },
+    { id: 3, title: "Family photo!", description: 'Matchy-Matchy!', year: 1986, path: './images/1986.jpg', likes: 1 },
 
     { id: 4, title: "Easter!", description: 'Found the eggs mom!', year: 1987, path: './images/1987.jpg', likes: 3 },
 
@@ -38,7 +38,7 @@ const galleryItems = [
 
     { id: 19, title: "High School Grad!", description: "Graduation party!", year: 2002, path: './images/2002.jpg', likes: 0 },
 
-    { id: 20, title: "ATV!", description: 'On the beach in Mexico!', year: 2003, path: './images/2003.jpg', likes: 0 },
+    { id: 20, title: "ATV On The Beach!", description: 'In Mexico!', year: 2003, path: './images/2003.jpg', likes: 0 },
 
     { id: 21, title: "College!", description: 'Not many good photos this year!', year: 2004, path: './images/2004.jpg', likes: 0 },
 
@@ -68,7 +68,7 @@ const galleryItems = [
 
     { id: 34, title: "Fun with work friends!", description: 'I love hanging these guys!', year: 2017, path: './images/2017.jpg', likes: 0 },
 
-    { id: 35, title: "Look at those kids!", description: 'Where did these kids come from?', year: 2018, path: './images/2018.jpg', likes: 0 },
+    { id: 35, title: "Look at those kids!", description: 'Where did they come from?', year: 2018, path: './images/2018.jpg', likes: 0 },
 
     { id: 36, title: "Family bike ride!", description: 'Love to bike - better with family!', year: 2019, path: './images/2019.jpg', likes: 0 },
 
