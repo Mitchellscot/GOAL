@@ -1,0 +1,15 @@
+#uploadForm {
+    max-width: 347PX;
+    border: 1px solid black;
+}
+.form-group {
+    margin: 5px;
+}
+.form-body {
+    margin-top: 0px;
+    padding: 0px;
+}
+h4 {
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 0px;
+}

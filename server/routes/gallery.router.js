@@ -3,7 +3,18 @@ const router = express.Router();
 const galleryItems = require('../modules/gallery.data');
 const pool = require('../modules/pool');
 
-
+//POST Route
+router.post('/', (req, res) =>{
+    const newImage = req.body;
+    console.log('Adding a photo!', newImage);
+    const query = `INSERT INTO "images" ("title", "description", "year", "path", "likes") VALUES ($1, $2, $3, $4, '0');`;
+    pool.query(query, [newImage.title, newImage.description, newImage.year, newImage.path]).then((result) =>{
+        res.sendStatus(201);
+    }).catch((error)=> {
+        console.log(`HEY MITCH - COULDN'T ADD THE IMAGE! ${error}`);
+        res.sendStatus(500);
+    });
+})
 
 // PUT Route
 router.put('/like/:id', (req, res) => {

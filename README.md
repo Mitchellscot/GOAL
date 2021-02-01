@@ -6,8 +6,6 @@
 
 _Duration: 1 weekend_
 
-
-
 To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
 
 
@@ -20,8 +18,6 @@ Link to software that is required to install the app (e.g. node).
 - Express!
 
 ## Installation
-
-If your application has secret keys (for example --  Twilio), make sure you tell them how to set that up, both in getting the key and then what to call it in the `.env` file.
 
 1. Create a database named `react_gallery`,
 2. The queries in the `database.sql` file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries, 
