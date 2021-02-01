@@ -24,7 +24,7 @@ function GalleryItem({ image, updateLikes }) {
     return (
         <div className="card text-white bg-primary mb-3">
             <div className="card-header">{image.title}</div>
-            <div className="card-body cardBody" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+            <div className="card-body" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
                 <h4 className="card-title"></h4>
                 <img src={image.path} alt={"A photo from the year " + image.year} height="300 px" width="300 px"
                 className={hovered ? 'hovered' : ''} 
