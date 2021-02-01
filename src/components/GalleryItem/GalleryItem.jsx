@@ -2,7 +2,7 @@ import React from 'react';
 import './GalleryItem.css';
 import {useState} from 'react';
 
-function GalleryItem({ image, updateLikes }) {
+function GalleryItem({ image, updateLikes, deleteImage }) {
     const [hovered, setHovered] = useState(false);
 
     const toggleHover = () => {
@@ -40,9 +40,13 @@ function GalleryItem({ image, updateLikes }) {
                     updateLikes(image, 1)}}
                     ></i></div>
                 <div className="year">{image.year}</div>
+                
             </div>
             <div className="card-footer">
                 {determineLIkes(image.likes)}
+                {image.id > 38 ? <i class="fas fa-trash-alt" onClick={() => {
+                    deleteImage(image);
+                }}></i> : <></>}
             </div>
         </div>
     );

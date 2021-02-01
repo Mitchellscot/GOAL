@@ -3,7 +3,7 @@ import './GalleryList.css';
 import GalleryItem from '../GalleryItem/GalleryItem.jsx';
 import UploadForm from '../UploadForm/UploadForm'
 
-function GalleryList({ images, updateLikes, newImageDescription, setNewImageDescription, newImageName, setNewImageName, newImageYear, setNewImageYear, newImageURL, setNewImageURL, addImage }) {
+function GalleryList({ images, updateLikes, newImageDescription, setNewImageDescription, newImageName, setNewImageName, newImageYear, setNewImageYear, newImageURL, setNewImageURL, addImage, deleteImage }) {
 
     return (
 
@@ -14,6 +14,7 @@ function GalleryList({ images, updateLikes, newImageDescription, setNewImageDesc
                     <GalleryItem
                         image={image}
                         updateLikes={updateLikes}
+                        deleteImage={deleteImage}
                     />
                 </div>
                 )
