@@ -7,7 +7,7 @@ function GalleryList({ images, updateLikes, newImageDescription, setNewImageDesc
 
     return (
 
-        <div className="card-deck">
+        <div className="card-deck col d-flex justify-content-center">
             <>
                 {images.map(image =>
                 (<div key={image.id}>
