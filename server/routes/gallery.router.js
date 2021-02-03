@@ -48,7 +48,7 @@ router.put('/like/:id', (req, res) => {
 
 // GET Route
 router.get('/', (req, res) => {
-    let queryText = 'SELECT * FROM "images" ORDER BY "id" ASC;';
+    let queryText = 'SELECT * FROM "images" ORDER BY "year" ASC, "id" ASC;';
     pool.query(queryText).then(result => {
         res.send(result.rows);
       })
