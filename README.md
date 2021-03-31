@@ -1,11 +1,12 @@
-# My life in pictures!
+# Gallery Of A Life (GOAL)
 
 ## Description
 
 _Duration: 1 weekend_
 
-To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
+This project has pictures from every year of my life. I am very lucky to have so many pictures of myself growing up in an age before smart phones, so I decided to create a website with one picture from every year. I hope you enjoy the slide show!
 
+To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
 
 ### Prerequisites
 
@@ -22,7 +23,7 @@ Link to software that is required to install the app (e.g. node).
 3. Open up your editor of choice and run an `npm install`
 4. Run `npm run server` in your terminal
 5. Run `npm run client` in your terminal
-6. The `npm run client` command will open up a new browser tab for you!
+6. Smash that like button!
 
 ## Usage
 How does someone use this application? Tell a user story here.
