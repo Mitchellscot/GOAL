@@ -32,10 +32,6 @@ How does someone use this application? Tell a user story here.
 2. If you like one, click the like button!
 3. Thanks!
 
-## Built With
-
-LOVE and all of my pictures
-
 ## Acknowledgement
 Shout out to my mom and dad thanks for not having an abortion I know life was uncertain in 1984 but I'm so thankful you decided to give me life and guess what that nuclear war never happened!
 
