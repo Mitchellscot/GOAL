@@ -6,7 +6,7 @@ _Duration: 1 weekend_
 
 This project has pictures from every year of my life. I am very lucky to have so many pictures of myself growing up in an age before smart phones, so I decided to create a website with one picture from every year. I hope you enjoy the slide show!
 
-To see the fully functional site, please visit [this link](https://still-scrubland-81072.herokuapp.com/)
+To see the fully functional site, please visit [this link](https://still-scrubland-81072.herokuapp.com/) (if you get an error just reload, it's heroku and the server goes to sleep)
 
 ### Prerequisites
 
