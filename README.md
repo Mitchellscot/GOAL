@@ -1,5 +1,3 @@
-(View Raw will give you the markdown that you can copy to your repos!)
-
 # My life in pictures!
 
 ## Description
